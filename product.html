@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sweat Stop | سويت ستوب - COSMO</title>
+<meta name="description" content="كوزمو: عناية شخصية مصرية. سويت ستوب مضاد تعرق للأيدي والقدمين بتركيز 20% ألومنيوم كلوروهيدرات.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bar">الدفع عند الاستلام · توصيل لكل محافظات مصر · الطلب عن طريق واتساب</div>
+<header>
+  <a class="wa-btn" href="https://wa.me/201501272955?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%83%D9%88%D8%B2%D9%85%D9%88%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D9%85%D9%86%D8%AA%D8%AC">واتساب</a>
+  <nav><a href="index.html">الرئيسية</a><a href="product.html">سويت ستوب</a><a href="about.html">من نحن</a><a href="shipping.html">الشحن</a><a href="returns.html">الاسترجاع</a></nav>
+  <a class="logo" href="index.html"><img src="img/logo.png" alt="COSMO"></a>
+</header>
+
+<section class="prod">
+  <div class="im"><img src="img/product.jpg" alt="Sweat Stop"></div>
+  <div>
+    <small style="color:var(--mute);letter-spacing:2px">COSMO</small>
+    <h1>Sweat Stop | سويت ستوب</h1>
+    <div class="pr">250 ج.م</div>
+    <p>سبراي مضاد للتعرق لليدين والقدمين، بتركيبة متقدمة بتركيز 20% ألومنيوم كلوروهيدرات، لجفاف يدوم طويلًا. العبوة 50 مل.</p>
+    <ul>
+      <li>تحكم أقصى في التعرق</li>
+      <li>تركيبة متقدمة</li>
+      <li>مختبرة جلديًا</li>
+    </ul>
+    <p><b>طريقة الاستخدام:</b> ضعه على اليدين أو القدمين النظيفتين والجافتين مرة واحدة يوميًا في الليل. اتركه لمدة 30 دقيقة ثم اشطفه بالماء.</p>
+    <p><b>تحذير:</b> للاستعمال الخارجي فقط. لا تضعه على الجلد المجروح أو المتهيج. غير موصى به للنساء الحوامل أو المرضعات.</p>
+
+    <form class="order" id="f" onsubmit="return go(event)">
+      <label>الاسم</label><input id="n" required>
+      <label>المحافظة</label><input id="g" required>
+      <label>العنوان بالتفصيل</label><input id="a" required>
+      <label>الكمية</label>
+      <select id="q"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <div class="total">الإجمالي: <span id="t">250</span> ج.م <small style="font-weight:400;color:var(--mute)">(غير شامل الشحن)</small></div>
+      <button class="btn wa" style="width:100%">اطلب عن طريق واتساب</button>
+      <div class="note">هيفتح واتساب برسالة جاهزة بطلبك، ونأكد معاك التفاصيل وتكلفة الشحن. الدفع عند الاستلام.</div>
+    </form>
+  </div>
+</section>
+<script>
+const P=250,W="201501272955";
+const q=document.getElementById('q'),t=document.getElementById('t');
+q.onchange=()=>t.textContent=P*q.value;
+function go(e){e.preventDefault();
+ const m="أهلاً كوزمو، عايز أطلب:\nالمنتج: Sweat Stop\nالكمية: "+q.value+"\nالإجمالي: "+(P*q.value)+" ج.م\nالاسم: "+n.value+"\nالمحافظة: "+g.value+"\nالعنوان: "+a.value;
+ window.open("https://wa.me/"+W+"?text="+encodeURIComponent(m),"_blank");return false}
+</script>
+
+<footer>
+  <div class="fg">
+    <div><img src="img/logo.png" alt="COSMO"><p>كوزمو علامة مصرية للعناية الشخصية بتركيبات فعّالة.</p><p>واتساب: <span dir="ltr">01501272955</span></p></div>
+    <div><h4>روابط سريعة</h4><a href="index.html">الرئيسية</a><a href="product.html">سويت ستوب</a><a href="about.html">من نحن</a></div>
+    <div><h4>السياسات</h4><a href="shipping.html">سياسة الشحن</a><a href="returns.html">الاسترجاع والاستبدال</a><a href="privacy.html">الخصوصية</a><a href="terms.html">الشروط والأحكام</a></div>
+    <div><h4>تواصل معنا</h4><a href="https://wa.me/201501272955?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%83%D9%88%D8%B2%D9%85%D9%88">راسلنا على واتساب</a></div>
+  </div>
+  <div class="copy">© 2026، جميع الحقوق محفوظة COSMO</div>
+</footer>
+<a class="float" href="https://wa.me/201501272955?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%83%D9%88%D8%B2%D9%85%D9%88%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%B3%D9%88%D9%8A%D8%AA%20%D8%B3%D8%AA%D9%88%D8%A8" aria-label="واتساب">💬</a>
+</body>
+</html>
